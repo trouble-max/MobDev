@@ -39,8 +39,9 @@
         android:name="com.project.mvvmtodo.deleteallcompleted.DeleteAllCompletedDialogFragment"
         android:label="DeleteAllCompletedDialogFragment" /><action android:id="@+id/action_global_deleteAllCompletedDialogFragment" app:destination="@id/deleteAllCompletedDialogFragment"/>
     <fragment
-        android:id="@+id/termsFragment"
-        android:name="com.project.mvvmtodo.showterms.TermsFragment"
-        android:label="Biological Terms"
-        tools:layout="@layout/fragment_terms" /><action android:id="@+id/action_global_termsFragment" app:destination="@id/termsFragment"/>
+        android:id="@+id/factFragment"
+        android:name="com.project.mvvmtodo.fact.FactFragment"
+        android:label="Useless Facts"
+        tools:layout="@layout/fragment_fact" />
+    <action android:id="@+id/action_global_factFragment" app:destination="@id/factFragment" />
 </navigation>

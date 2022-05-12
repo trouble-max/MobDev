@@ -101,8 +101,8 @@ class TasksFragment: Fragment(R.layout.fragment_tasks), TasksAdapter.OnItemClick
                         val action = TasksFragmentDirections.actionGlobalDeleteAllCompletedDialogFragment()
                         findNavController().navigate(action)
                     }
-                    is TasksViewModel.TasksEvent.NavigateToTerms -> {
-                        val action = TasksFragmentDirections.actionGlobalTermsFragment()
+                    is TasksViewModel.TasksEvent.NavigateToFacts -> {
+                        val action = TasksFragmentDirections.actionGlobalFactFragment()
                         findNavController().navigate(action)
                     }
                 }.exhaustive
@@ -149,8 +149,8 @@ class TasksFragment: Fragment(R.layout.fragment_tasks), TasksAdapter.OnItemClick
                 viewModel.onDeleteAllCompletedClick()
                 true
             }
-            R.id.action_show_terms -> {
-                viewModel.onShowTermsClick()
+            R.id.action_show_fact -> {
+                viewModel.onShowFactsClick()
                 true
             }
             else -> super.onOptionsItemSelected(item)
